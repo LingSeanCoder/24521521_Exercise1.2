@@ -8,6 +8,7 @@
         order: -1;
     }
 
+    .about-grid,
     .skills-grid,
     .projects-grid {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -27,10 +28,15 @@
         min-height: 4rem;
     }
 
+    .nav-list {
+        display: none;
+    }
+
     .hero {
         padding-block: var(--space-8);
     }
 
+    .about-grid,
     .skills-grid,
     .projects-grid {
         grid-template-columns: 1fr;
@@ -38,6 +44,11 @@
 
     .section {
         padding-block: var(--space-10);
+    }
+
+    .profile-portrait {
+        width: min(100%, 280px);
+        min-height: 280px;
     }
 }
 
@@ -48,6 +59,18 @@
 
     .hero {
         gap: var(--space-6);
+    }
+
+    .hero h1 {
+        font-size: 2.35rem;
+    }
+
+    .hero-actions {
+        flex-direction: column;
+    }
+
+    .button {
+        width: 100%;
     }
 
     .section {
